@@ -14,7 +14,7 @@ Ele tem como objetico, fornecer uma ferramenta simples em Python para detectar e
 - **Como executar:**
   1. Navegue até a pasta do projeto:
 
-	  `cd c:\Users\eduado\Desktop\fpaa-floodfill`
+	  `cd /fpaa-floodfill`
 
   2. Instale dependências. Este projeto é escrito em Python puro e não tem dependências externas obrigatórias, então normalmente não é necessário instalar pacotes extras.
 
