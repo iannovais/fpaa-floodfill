@@ -27,8 +27,6 @@ Ele tem como objetico, fornecer uma ferramenta simples em Python para detectar e
 	  - `src\gui.py` — interface mínima para testar/visualizar.
 	  - `src\main.py` — arquivo principal do programa.
 
----
-
 ## Explicação do Algoritmo Flood Fill
 
 O algoritmo segue uma abordagem **iterativa baseada em fila (BFS)**, garantindo que cada célula navegável (`0`) seja agrupada de acordo com sua conectividade ortogonal (cima, baixo, esquerda e direita). Obstáculos (`1`) são preservados, e cada região encontrada recebe uma cor numérica distinta (`2–9`).
@@ -46,7 +44,7 @@ def _vizinhos(x, y, num_linhas, num_colunas):
 Retorna todos os vizinhos **ortogonais válidos**, respeitando os limites da grade.
 Apenas as posições imediatamente adjacentes são consideradas — diagonais não contam como conexão.
 
-**Exemplo: Ponto (2,1) em um grid 5×5:**
+### Exemplo: Ponto (2,1) em um grid 5×5:
 
 - Os vizinhos ortogonais válidos seriam:
    - Esquerda: **(1,1)**
@@ -83,7 +81,7 @@ Essa função executa o Flood Fill de fato, utilizando uma **fila (deque)** para
 
 * Isso garante que todas as células conectadas e navegáveis sejam preenchidas.
 
-### Exemplo do funcionamento de `preencher_regiao`
+### Exemplo:
 
 **Entrada:**
 
@@ -136,7 +134,7 @@ Com isso:
 - obstáculos (`1`) são preservados
 - regiões coloridas (`>= 2`) não são alteradas
 
-### Exemplo completo usando o algoritmo
+### Exemplo:
 
 **Grade inicial:**
 ```
@@ -202,7 +200,7 @@ O módulo `InterfaceGrade` exibe o grid visualmente:
 2 2 1 3 3
 ```
 
-- Representação visual:
+**Representação Visual:**
 ```
 🟥 🟥 ⬛ 🟧 🟧
 ```
@@ -210,16 +208,16 @@ O módulo `InterfaceGrade` exibe o grid visualmente:
 
 ### 6. Execução principal (MAIN.PY)
 
-O arquivo `main` integra todas as partes do projeto:
+O arquivo `main` integra todas as partes do projeto, organizadamente:
 
-**1.** Carrega o grid inicial.
-**2.** Encontra a primeira célula livre.
-**3.** Exibe o grid original no terminal.
-**4.** Inicia a interface gráfica.
-**5.** Executa `preencher_todas_regioes`.
-**6.** Mostra o grid final.
-**7.** Exibe estatísticas de cada região.
-**8.** Atualiza a interface para mostrar o resultado colorido.
+- **1.** Carrega o grid inicial.
+- **2.** Encontra a primeira célula livre.
+- **3.** Exibe o grid original no terminal.
+- **4.** Inicia a interface gráfica.
+- **5.** Executa `preencher_todas_regioes`.
+- **6.** Mostra o grid final.
+- **7.** Exibe estatísticas de cada região.
+- **8.** Atualiza a interface para mostrar o resultado colorido.
 
 **Exemplo de saída no terminal:**
 ```
@@ -227,6 +225,6 @@ Regiões preenchidas: 5
 Cor 2: 10 células
 Cor 3: 7 células
 Cor 4: 12 células
-...
+etc...
 ```
 ---
