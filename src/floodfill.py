@@ -61,3 +61,11 @@ def preencher_todas_regioes(grade: Grade, inicio_x: int, inicio_y: int) -> Grade
                 preencher_regiao(grade, x, y, rotulo, alvo=LIVRE)
     
     return grade
+
+def estatisticas_regioes(grade: Grade) -> Dict[int, int]:
+    stats: Dict[int, int] = {}
+    for linha in grade:
+        for valor in linha:
+            if valor >= 2:
+                stats[valor] = stats.get(valor, 0) + 1
+    return stats
