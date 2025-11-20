@@ -33,8 +33,6 @@ O algoritmo segue uma abordagem **iterativa baseada em fila (BFS)**, garantindo 
 
 O funcionamento está organizado em três partes principais: detecção de vizinhos, preenchimento de uma única região e preenchimento completo de todas as regiões do grid.
 
----
-
 ### 1. A função `_vizinhos`
 
 ```python
@@ -61,8 +59,6 @@ Apenas as posições imediatamente adjacentes são consideradas — diagonais n�
         ↓
       (2,2)
 ```
-
----
 
 ### 2. A função `preencher_regiao`
 
@@ -117,8 +113,6 @@ preencher_regiao(grade, 0, 0, rotulo=2)
 
 - A função retorna `True` indicando que a região foi preenchida.
 
----
-
 ### 3. A função `preencher_todas_regioes`
 
 Essa função coordena o preenchimento global do grid. Ela:
@@ -165,8 +159,6 @@ Com isso:
 
 - Nenhuma célula livre restante, fim do processo.
 
----
-
 ### 4. A função `estatisticas_regioes`
 
 Essa função percorre o grid e conta quantas células pertencem a cada cor (`>= 2`).
@@ -185,8 +177,6 @@ Cor 3 → 2 células
 Cor 4 → 2 células
 ```
 
----
-
 ### 5. Visualização com Tkinter (GUI)
 
 O módulo `InterfaceGrade` exibe o grid visualmente:
@@ -204,7 +194,6 @@ O módulo `InterfaceGrade` exibe o grid visualmente:
 ```
 🟥 🟥 ⬛ 🟧 🟧
 ```
----
 
 ### 6. Execução principal (MAIN.PY)
 
@@ -227,4 +216,3 @@ Cor 3: 7 células
 Cor 4: 12 células
 etc...
 ```
----
