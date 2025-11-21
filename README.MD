@@ -6,6 +6,23 @@ Este projeto realiza a implementação e demonstração de um algoritmo Flood Fi
 Ele tem como objetico, fornecer uma ferramenta simples em Python para detectar e preencher regiões conectadas (componentes) em uma matriz bidimensional, com uma interface mínima para teste e visualização.
 
 ## Introdução
+O algoritmo Flood Fill é uma técnica clássica utilizada para identificar e preencher regiões conectadas dentro de uma matriz bidimensional. Ele funciona de forma semelhante à ferramenta de “balde de tinta” encontrada em editores de imagem, onde todas as áreas conectadas de uma mesma cor são preenchidas simultaneamente.
+
+No contexto deste projeto, o Flood Fill é aplicado sobre um grid 2D composto por células livres e obstáculos, permitindo detectar todos os componentes conexos formados por células navegáveis. Cada região encontrada é marcada com um rótulo numérico distinto, que posteriormente é convertido em uma cor na interface gráfica.
+
+Esse algoritmo é amplamente utilizado em áreas como:
+
+1. processamento de imagens,
+
+2. identificação de componentes em grafos,
+
+3. navegação em mapas,
+
+4. jogos 2D,
+
+5. rotulagem de regiões em segmentação.
+
+Aqui, ele é apresentado de forma didática, visual e modular, permitindo compreender tanto o funcionamento interno quanto observar o resultado em tempo real através da interface Tkinter.
 
 ## Instruções de Uso e Configuração
 - **Requisitos:**
