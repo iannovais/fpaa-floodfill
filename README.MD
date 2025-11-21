@@ -37,7 +37,7 @@ Aqui, ele é apresentado de forma didática, visual e modular, permitindo compre
 
   3. Para rodar a aplicação principal:
 
-	  `python src\main.py`
+	  `python code\main.py`
 
   4. Arquivos principais:
 	  - `src\floodfill.py` — implementação do algoritmo Flood Fill.
