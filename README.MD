@@ -216,3 +216,9 @@ Cor 3: 7 células
 Cor 4: 12 células
 etc...
 ```
+
+## Visualização
+
+Aqui está um exemplo da visualização gráfica do Grid:
+
+![Grid preenchido](assets/Gui.jpeg)
